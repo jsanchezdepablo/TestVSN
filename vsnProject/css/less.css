@@ -63,6 +63,9 @@ body div.middle-page ul li span:nth-last-of-type(1) {
   padding: 0;
   margin-left: 425px;
 }
+body div.middle-page ul li span:nth-last-of-type(1) i:hover {
+  cursor: pointer;
+}
 body div.middle-page ul li.header-table {
   color: #57bbe2;
 }
@@ -126,6 +129,58 @@ body div.middle-page #dialog .save_element {
   margin-top: 10px;
   border-top-width: 0;
   border-bottom-color: black;
+}
+body div.middle-page #dialog .save_element:hover {
+  cursor: pointer;
+}
+body div.middle-page #eraseDialog {
+  font-size: 12px;
+  color: #b3b3b3;
+  display: none;
+  background: #416070;
+  border-radius: 4px;
+}
+body div.middle-page #eraseDialog .quest {
+  color: #ffffff;
+  margin-left: 65px;
+  display: block;
+  margin-top: 10px;
+}
+body div.middle-page #eraseDialog .yes {
+  margin-right: 20px;
+  margin-left: 5px;
+  padding: 2px;
+  background: #ff0024;
+  border: 2px solid #000000;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+  color: black;
+  display: block;
+  margin-top: 15px;
+  width: 108px;
+  margin-bottom: 15px;
+}
+body div.middle-page #eraseDialog .yes:hover {
+  cursor: pointer;
+}
+body div.middle-page #eraseDialog .no {
+  margin-right: 20px;
+  margin-left: 5px;
+  padding: 2px;
+  background: #00a2ff;
+  border: 2px solid #000000;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+  color: black;
+  display: block;
+  margin-top: 15px;
+  width: 108px;
+  margin-bottom: 15px;
+}
+body div.middle-page #eraseDialog .no:hover {
+  cursor: pointer;
 }
 body div.middle-page .ui-dialog {
   margin-left: 15%;

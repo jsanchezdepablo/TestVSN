@@ -70,6 +70,10 @@ body {
                         text-align: center;
                         padding: 0;
                         margin-left: 425px;
+
+                        i:hover {
+                            cursor: pointer;
+                        }
                     }
                 }
             }
@@ -152,6 +156,64 @@ body {
                 border-top-width: 0;
                 border-bottom-color: black;
 
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        #eraseDialog {
+            font-size: 12px;
+            color: #b3b3b3;
+            display: none;
+            background: #416070;
+            border-radius: 4px;
+
+            .quest {
+                color: #ffffff;
+                margin-left: 65px;
+                display: block;
+                margin-top: 10px;
+            }
+
+            .yes {
+                margin-right: 20px;
+                margin-left: 5px;
+                padding: 2px;
+                background: #ff0024;
+                border: 2px solid #000000;
+                font-size: 14px;
+                font-weight: bold;
+                border-radius: 4px;
+                color: black;
+                display: block;
+                margin-top: 15px;
+                width: 108px;
+                margin-bottom: 15px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .no {
+                margin-right: 20px;
+                margin-left: 5px;
+                padding: 2px;
+                background: #00a2ff;
+                border: 2px solid #000000;
+                font-size: 14px;
+                font-weight: bold;
+                border-radius: 4px;
+                color: black;
+                display: block;
+                margin-top: 15px;
+                width: 108px;
+                margin-bottom: 15px;
+
+                &:hover {
+                    cursor: pointer;
+                }
             }
         }
 

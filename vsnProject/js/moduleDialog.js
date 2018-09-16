@@ -47,7 +47,34 @@ define("moduleDialog", ["jquery_ui"], function () {
 
 
             $('#erase' + id).click(function () {
-                $("#" + id).remove();
+                $(".middle-page").append(
+                    '<div id="eraseDialog">' +
+                    '<span class="quest">Do you want to delete?</span>' +
+                    '<span class="yes">Yes</span>' +
+                    '<span class="no">No</span>' +
+                    '</div>'
+                );
+                $("#eraseDialog").dialog({
+                    beforeClose: function (event, ui) {
+                        $(".ui-dialog").remove();
+                        $("#eraseDialog").remove();
+                    }
+                });
+
+                $(".ui-dialog").appendTo("div.middle-page");
+
+                $(".yes").click(function () {
+                    $("#" + id).remove();
+                    $(".ui-dialog").remove();
+                    $("#eraseDialog").remove();
+                });
+
+                $(".no").click(function () {
+                    $(".ui-dialog").remove();
+                    $("#eraseDialog").remove();
+                });
+
+
             });
 
         });
