@@ -98,6 +98,9 @@ body div.middle-page #dialog input {
   padding: 3px;
   color: white;
 }
+body div.middle-page #dialog input.required::placeholder {
+  color: red;
+}
 body div.middle-page #dialog textarea {
   width: 237px;
   height: 80px;

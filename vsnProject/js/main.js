@@ -17,10 +17,4 @@ require.config({
 
 require(["moduleDialog"], function (createDialog) {
     createDialog.start();
-
-
-    /* $('.new_element').bind("click", function () {
-        createDialog.open();
-    });
- */
 });
